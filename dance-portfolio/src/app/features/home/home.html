@@ -1,57 +1,71 @@
-<section class="relative w-full min-h-screen overflow-hidden home-hero-section">
-  <video
-    autoplay
-    muted
-    loop
-    class="absolute inset-0 w-full h-full object-cover"
-  >
+<section class="relative w-full min-h-screen overflow-hidden home-hero-section flex items-center justify-center py-16 sm:py-24">
+  <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
     <source src="assets/videos/intro.mp4" type="video/mp4" />
   </video>
+  <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-slate-950/60 to-slate-950/95"></div>
 
-  <div class="absolute inset-0 bg-black/60"></div>
+  <div class="relative z-10 flex flex-col items-center justify-center w-full max-w-7xl px-4 sm:px-6 lg:px-8 text-center text-white home-hero-content">
+    
+    <div class="max-w-5xl mx-auto flex flex-col items-center">
+      <span class="uppercase tracking-[0.3em] text-xs sm:text-sm font-semibold mb-6 px-4 py-1.5 rounded-full bg-blue-500/10 text-cyan-400 border border-cyan-500/20 hero-chip backdrop-blur-sm">
+        Desde 2017 • Referência em K-pop Cover no RS
+      </span>
 
-  <div class="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 text-center text-white home-hero-content">
-    <div class="max-w-4xl">
-      <p class="uppercase tracking-[0.4em] text-sm text-orange-red mb-6 hero-chip">Grupo cover K-pop do Rio Grande do Sul</p>
-      <h1 class="section-title font-bold leading-tight mb-6">
-        Desde 2017 levando o K-pop do Rio Grande do Sul aos maiores palcos.
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-cyan-400">
+        O grupo cover K-pop mais premiado do Rio Grande do Sul.
       </h1>
-      <p class="text-xl sm:text-2xl subtitle-soft mb-10 max-w-3xl mx-auto">
-        Grupo cover premiado, referência em performance, sincronia e técnica,
-        com atuação em competições, eventos e projetos especiais.
+
+      <p class="text-base sm:text-lg lg:text-xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+        Reconhecidos pela excelência técnica, sincronia e qualidade de performance,
+        acumulamos títulos, participações em grandes eventos e trabalhos ao lado de artistas internacionais.
       </p>
 
-      <div class="flex flex-col sm:flex-row sm:justify-center gap-4">
-        <a href="#about" class="hero-button">
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 w-full sm:w-auto">
+        <a href="#about" class="hero-button-primary">
           Conheça nossa história
         </a>
-        <a href="#conquistas" class="hero-button bg-white text-slate-950 hover:opacity-95">
-          Ver conquistas
+        <a href="#conquistas" class="hero-button-secondary">
+          Nossas conquistas
+        </a>
+        <a href="#parcerias" class="hero-button-tertiary">
+          Parcerias & Patrocínios
         </a>
       </div>
     </div>
 
-    <div class="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 w-full max-w-6xl home-hero-cards">
-      <div class="surface-card home-card rounded-3xl shadow-2xl">
-        <p class="home-card-icon">🏆</p>
-        <h3 class="home-card-title">Maior número de títulos no RS</h3>
-        <p>Competências reconhecidas nas principais competições do estado.</p>
+    <div class="mt-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 w-full home-hero-cards">
+      <div class="home-card">
+        <div class="home-card-icon-wrapper">🏆</div>
+        <h3 class="home-card-title">Maior campeão do RS</h3>
+        <p class="home-card-description">
+          O grupo cover K-pop com o maior número de títulos em competições do Rio Grande do Sul.
+        </p>
       </div>
-      <div class="surface-card home-card rounded-3xl shadow-2xl">
-        <p class="home-card-icon">🎤</p>
-        <h3 class="home-card-title">Backdancers oficiais da Hyelin (EXID)</h3>
-        <p>Experiência profissional em palco com artistas internacionais.</p>
+
+      <div class="home-card">
+        <div class="home-card-icon-wrapper">🎤</div>
+        <h3 class="home-card-title">Artistas internacionais</h3>
+        <p class="home-card-description">
+          Backdancers oficiais da Hyelin (EXID), levando nossa experiência para palcos profissionais.
+        </p>
       </div>
-      <div class="surface-card home-card rounded-3xl shadow-2xl">
-        <p class="home-card-icon">🌎</p>
-        <h3 class="home-card-title">Experiência interestadual</h3>
-        <p>Participações em competições fora do Rio Grande do Sul.</p>
+
+      <div class="home-card">
+        <div class="home-card-icon-wrapper">🌎</div>
+        <h3 class="home-card-title">Reconhecimento</h3>
+        <p class="home-card-description">
+          Participações marcantes em competições e grandes eventos dentro e fora do estado.
+        </p>
       </div>
-      <div class="surface-card home-card rounded-3xl shadow-2xl">
-        <p class="home-card-icon">❤️</p>
-        <h3 class="home-card-title">Eventos beneficentes</h3>
-        <p>Levar arte e solidariedade para o público é uma missão constante.</p>
+
+      <div class="home-card">
+        <div class="home-card-icon-wrapper">⭐</div>
+        <h3 class="home-card-title">Referência desde 2017</h3>
+        <p class="home-card-description">
+          Anos de dedicação, técnica e consistência que consolidaram nossa posição no cenário.
+        </p>
       </div>
     </div>
+
   </div>
 </section>

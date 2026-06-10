@@ -1,47 +1,135 @@
+/* Layout Geral da Hero */
 .home-hero-content {
-  padding-top: 2rem;
+  padding-top: 1rem;
+}
+
+/* Botão Principal (Destaque Sólido Branco/Gelo) */
+.hero-button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.875rem 2rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #0f172a;
+  background-color: #f8fafc;
+  border-radius: 9999px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 }
 
 @media (min-width: 640px) {
-  .home-hero-content {
-    padding-top: 3.5rem;
-  }
+  .hero-button-primary { width: auto; }
 }
 
-.hero-chip {
-  letter-spacing: 0.4em;
-  margin-bottom: 1.5rem;
+.hero-button-primary:hover {
+  transform: translateY(-2px);
+  background-color: #ffffff;
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.3); /* Brilho sutil azul no hover */
 }
 
-.home-hero-cards {
-  margin-top: 3.5rem;
+/* Botão Secundário (Borda com leve toque azulado) */
+.hero-button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.875rem 2rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 9999px;
+  backdrop-filter: blur(8px);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (min-width: 640px) {
+  .hero-button-secondary { width: auto; }
+}
+
+.hero-button-secondary:hover {
+  transform: translateY(-2px);
+  background-color: rgba(56, 189, 248, 0.08);
+  border-color: rgba(56, 189, 248, 0.5);
+}
+
+/* Botão Terciário (Link sutil cinza/azul) */
+.hero-button-tertiary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.875rem 2rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #94a3b8;
+  transition: color 0.2s ease;
+}
+
+@media (min-width: 640px) {
+  .hero-button-tertiary { width: auto; }
+}
+
+.hero-button-tertiary:hover {
+  color: #38bdf8; /* Transiciona para azul claro */
+}
+
+/* Cards de Destaque (Fundo azul escuro translúcido) */
 .home-card {
-  border: 1px solid rgba(148, 163, 184, 0.08);
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.9));
-  padding: 1.75rem;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.8),
+    rgba(30, 41, 59, 0.7)
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 2.25rem 2rem;
+  border-radius: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  height: 100%;
 }
 
 .home-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
-  border-color: rgba(56, 189, 248, 0.18);
+  transform: translateY(-8px);
+  /* Efeito de Glow Neon em tom Ciano/Azul no hover */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 15px rgba(34, 211, 238, 0.15);
+  border-color: rgba(34, 211, 238, 0.3);
 }
 
-.home-card-icon {
-  font-size: 2.25rem;
-  margin-bottom: 1rem;
+/* Wrapper do Ícone (Fundo azulado bem sutil) */
+.home-card-icon-wrapper {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  background: rgba(56, 189, 248, 0.05);
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(56, 189, 248, 0.1);
 }
 
+/* Tipografia interna dos cards */
 .home-card-title {
   margin-bottom: 0.75rem;
-  font-size: 1.125rem;
+  font-size: 1.15rem;
+  font-weight: 700;
   color: #f8fafc;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
 }
 
-.home-card p {
-  color: #cbd5e1;
-  line-height: 1.75;
+.home-card-description {
+  color: #94a3b8;
+  line-height: 1.6;
+  font-size: 0.925rem;
 }
