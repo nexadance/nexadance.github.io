@@ -1,0 +1,10 @@
+/* Efeito de hover suave para os cards da trajetória */
+.about-timeline-card {
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-timeline-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(34, 211, 238, 0.3) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}

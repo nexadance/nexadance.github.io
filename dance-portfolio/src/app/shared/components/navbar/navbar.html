@@ -2,69 +2,74 @@
   <div class="max-w-6xl mx-auto px-6 py-4">
     <div class="flex items-center justify-between">
       <!-- Logo -->
-      <a href="#home" class="flex items-center gap-3">
-        <img src="assets/logos/logo.png" alt="NEXA logo" class="logo-light h-10 w-auto" />
-        <span class="text-2xl font-bold tracking-widest text-white">NEXA</span>
+      <a href="#home" class="brand-logo flex items-center gap-3">
+        <img src="assets/logos/logo.png" alt="NEXA logo" class="logo-light h-9 w-auto" />
+        <span class="text-xl font-extrabold tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-white via-cyan-100 to-cyan-400">NEXA</span>
       </a>
 
       <!-- Menu Desktop -->
-      <ul class="hidden md:flex space-x-8">
+      <ul class="hidden md:flex items-center space-x-8">
         <li>
-          <a href="#home" class="hover:text-orange-red transition">Home</a>
+          <a href="#home" class="nav-link">Home</a>
         </li>
         <li>
-          <a href="#about" class="hover:text-orange-red transition">Sobre</a>
+          <a href="#about" class="nav-link">Sobre</a>
         </li>
         <li>
-          <a href="#conquistas" class="hover:text-orange-red transition">Conquistas</a>
+          <a href="#conquistas" class="nav-link">Conquistas</a>
         </li>
         <li>
-          <a href="#portfolio" class="hover:text-orange-red transition">Portfólio</a>
+          <a href="#portfolio" class="nav-link">Portfólio</a>
         </li>
         <li>
-          <a href="#gallery" class="hover:text-orange-red transition">Galeria</a>
+          <a href="#gallery" class="nav-link">Galeria</a>
         </li>
         <li>
-          <a href="#parcerias" class="hover:text-orange-red transition">Parcerias</a>
+          <a href="#contact" class="nav-link">Contato</a>
         </li>
         <li>
-          <a href="#contact" class="hover:text-orange-red transition">Contato</a>
+          <a href="#parcerias" class="nav-btn">Seja Parceiro</a>
         </li>
       </ul>
 
-      <!-- Menu Mobile Button -->
+      <!-- Menu Mobile Button (CSS Animated) -->
       <button
         (click)="toggleMenu()"
-        class="md:hidden text-2xl focus:outline-none"
+        class="mobile-menu-btn md:hidden"
+        [class.open]="isOpen()"
         aria-label="Toggle menu"
       >
-        {{ isOpen() ? '✕' : '☰' }}
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
 
-    <!-- Menu Mobile -->
-    <ul *ngIf="isOpen()" class="md:hidden mt-4 space-y-4">
-      <li>
-        <a href="#home" (click)="isOpen.set(false)" class="block hover:text-orange-red transition">Home</a>
-      </li>
-      <li>
-        <a href="#about" (click)="isOpen.set(false)" class="block hover:text-orange-red transition">Sobre</a>
-      </li>
-      <li>
-        <a href="#conquistas" (click)="isOpen.set(false)" class="block hover:text-orange-red transition">Conquistas</a>
-      </li>
-      <li>
-        <a href="#portfolio" (click)="isOpen.set(false)" class="block hover:text-orange-red transition">Portfólio</a>
-      </li>
-      <li>
-        <a href="#gallery" (click)="isOpen.set(false)" class="block hover:text-orange-red transition">Galeria</a>
-      </li>
-      <li>
-        <a href="#parcerias" (click)="isOpen.set(false)" class="block hover:text-orange-red transition">Parcerias</a>
-      </li>
-      <li>
-        <a href="#contact" (click)="isOpen.set(false)" class="block hover:text-orange-red transition">Contato</a>
-      </li>
-    </ul>
+    <!-- Menu Mobile (Animated Overlay) -->
+    <div class="mobile-menu md:hidden" [class.open]="isOpen()">
+      <ul class="space-y-5 px-6 py-6 border-t border-slate-800/40 mt-4">
+        <li>
+          <a href="#home" (click)="isOpen.set(false)" class="mobile-nav-link">Home</a>
+        </li>
+        <li>
+          <a href="#about" (click)="isOpen.set(false)" class="mobile-nav-link">Sobre</a>
+        </li>
+        <li>
+          <a href="#conquistas" (click)="isOpen.set(false)" class="mobile-nav-link">Conquistas</a>
+        </li>
+        <li>
+          <a href="#portfolio" (click)="isOpen.set(false)" class="mobile-nav-link">Portfólio</a>
+        </li>
+        <li>
+          <a href="#gallery" (click)="isOpen.set(false)" class="mobile-nav-link">Galeria</a>
+        </li>
+        <li>
+          <a href="#contact" (click)="isOpen.set(false)" class="mobile-nav-link">Contato</a>
+        </li>
+        <li class="pt-2">
+          <a href="#parcerias" (click)="isOpen.set(false)" class="mobile-nav-btn text-center block">Seja Parceiro</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>

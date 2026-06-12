@@ -1,1 +1,16 @@
-/* Estilos específicos para a seção de conquistas. */
+/* Efeitos adicionais para os cards de conquistas e métricas */
+.rounded-2xl {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rounded-2xl:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45), 0 0 15px rgba(34, 211, 238, 0.12);
+  border-color: rgba(34, 211, 238, 0.35) !important;
+}
+
+/* Ativação dos Gradientes de Texto */
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}

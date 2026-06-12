@@ -52,9 +52,9 @@ export class Achievements {
   ];
 
   stats: StatCard[] = [
-    { label: 'Títulos conquistados', value: '5 primeiros lugares oficiais' },
-    { label: 'Dreamfest', value: 'Pentacampeão Dreamfest' },
-    { label: 'Desde', value: '2017 em atividade' },
-    { label: 'Experiência', value: 'Eventos dentro e fora do estado' },
+    { label: 'Primeiros lugares oficiais', value: '7' },
+    { label: 'Títulos no Dreamfest', value: '5x' },
+    { label: 'Em atividade desde', value: '2017' },
+    { label: 'Projeção de palco', value: 'Nacional' },
   ];
 }

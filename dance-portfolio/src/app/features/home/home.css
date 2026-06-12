@@ -133,3 +133,38 @@
   line-height: 1.6;
   font-size: 0.925rem;
 }
+
+/* Logo da Hero */
+.hero-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0 0 20px rgba(34, 211, 238, 0.25));
+}
+
+.hero-brand-logo {
+  filter: invert(100%) sepia(35%) saturate(200%) hue-rotate(185deg) brightness(1.15) drop-shadow(0 0 10px rgba(6, 182, 212, 0.4));
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+}
+
+.hero-logo-container:hover .hero-brand-logo {
+  transform: scale(1.08) rotate(2deg);
+  filter: invert(100%) sepia(35%) saturate(200%) hue-rotate(185deg) brightness(1.25) drop-shadow(0 0 18px rgba(6, 182, 212, 0.6));
+}
+
+/* Animação de flutuação para o logo */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}

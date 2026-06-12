@@ -35,7 +35,7 @@ export class Events {
       date: '2019',
       title: 'Union Contest',
       location: 'Porto Alegre, RS',
-      description: '1º lugar com “Sticker”, reforçando nossa consistência técnica.',
+      description: '1º lugar com “Sticker”, reforçando a nossa capacidade de recriar a experiência idêntica dos idols.',
       type: 'highlight',
     },
     {
@@ -49,7 +49,7 @@ export class Events {
       date: '2024',
       title: 'Hyelin (EXID)',
       location: 'Porto Alegre, RS',
-      description: 'Atuamos como backdancers oficiais, uma experiência decisiva e inspiradora.',
+      description: 'Atuamos como backdancers oficiais da estrela coreana, proporcionando uma conexão emocional profunda com o público e confirmando nossa entrega artística de alto nível.',
       type: 'experience',
     },
     {
