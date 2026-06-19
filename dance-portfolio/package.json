@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "predeploy": "ng build --base-href=/portfolio-grupo-danca/",
+    "predeploy": "ng build --base-href=/",
     "deploy": "npx angular-cli-ghpages --dir=dist/dance-portfolio/browser",
     "test": "vitest",
     "test:ui": "vitest --ui",
