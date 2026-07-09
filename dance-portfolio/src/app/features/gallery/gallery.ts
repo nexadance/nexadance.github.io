@@ -12,6 +12,7 @@ export class Gallery {
   allItems: GalleryItem[] = GALLERY_ITEMS;
 
   categories: string[] = [
+    'FIH2 2026',
     'Animebuzz 2026',
     'Animebuzz 2025',
     'Animebuzz FJRS 2025',
@@ -20,7 +21,7 @@ export class Gallery {
     'Premiação DREAMFEST 2025',
   ];
 
-  activeCategory: string = 'Animebuzz 2026';
+  activeCategory: string = 'FIH2 2026';
   activeSubCategory: string = 'todos';
   visibleCount: number = 12;
   selectedImageIndex: number | null = null;

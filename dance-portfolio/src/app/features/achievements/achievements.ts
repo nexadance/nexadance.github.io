@@ -49,6 +49,12 @@ export class Achievements {
         { label: 'Dreamfest II', detail: 'Reveal — 1º lugar' },
       ],
     },
+    {
+      year: '2026',
+      entries: [
+        { label: 'FIH2 — 23° EDIÇÃO', detail: 'KPOP — 2º lugar' },
+      ],
+    },
   ];
 
   stats: StatCard[] = [

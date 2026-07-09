@@ -67,6 +67,14 @@ export class Events {
       youtubeId: 'GW6qoS8-95k'
     },
     {
+      title: 'FIH2 - 23° EDIÇÃO',
+      category: 'live-performance',
+      tag: '2º LUGAR FIH2',
+      description: '2º lugar na categoria KPOP no FIH2 2026. Agradecemos todo apoio e parabenizamos a cena gaúcha.',
+      bgGradient: 'from-blue-800/30 via-slate-900/40 to-slate-950',
+      youtubeId: '6iErVxjTtkc'
+    },
+    {
       title: 'ATEEZ - "HALAZIA"',
       category: 'live-performance',
       tag: '1º LUGAR ANIMEXPO',

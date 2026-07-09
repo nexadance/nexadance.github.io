@@ -882,4 +882,239 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     "category": "Premiação DREAMFEST 2025",
     "subCategory": null
   }
+  ,
+  {
+    "image": "assets/gallery/FIH2-2026/LEA_1311.jpg",
+    "title": "LEA_1311",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/LEA_1315.jpg",
+    "title": "LEA_1315",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/LEA_1318.jpg",
+    "title": "LEA_1318",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/LEA_1319.jpg",
+    "title": "LEA_1319",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/LEA_1330.jpg",
+    "title": "LEA_1330",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/LEA_1337.jpg",
+    "title": "LEA_1337",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/LEA_1339.jpg",
+    "title": "LEA_1339",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/LEA_1340.jpg",
+    "title": "LEA_1340",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/LEA_1341.jpg",
+    "title": "LEA_1341",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/LEA_1343.jpg",
+    "title": "LEA_1343",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/LEA_1345.jpg",
+    "title": "LEA_1345",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/LEA_1357.jpg",
+    "title": "LEA_1357",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/LEA_1359.jpg",
+    "title": "LEA_1359",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/LEA_1363.jpg",
+    "title": "LEA_1363",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/LEA_1365.jpg",
+    "title": "LEA_1365",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/LEA_1368.jpg",
+    "title": "LEA_1368",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_BAT6506.jpg",
+    "title": "_BAT6506",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_BAT6514.jpg",
+    "title": "_BAT6514",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_BAT6519.jpg",
+    "title": "_BAT6519",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_BAT6521.jpg",
+    "title": "_BAT6521",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_BAT6532.jpg",
+    "title": "_BAT6532",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_BAT6535.jpg",
+    "title": "_BAT6535",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_BAT6536.jpg",
+    "title": "_BAT6536",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_BAT6539.jpg",
+    "title": "_BAT6539",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_BAT6540.jpg",
+    "title": "_BAT6540",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_BAT6543.jpg",
+    "title": "_BAT6543",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_BAT6545.jpg",
+    "title": "_BAT6545",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_BAT6547.jpg",
+    "title": "_BAT6547",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_BAT6554.jpg",
+    "title": "_BAT6554",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_BAT6559.jpg",
+    "title": "_BAT6559",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_BAT6575.jpg",
+    "title": "_BAT6575",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_BAT6578.jpg",
+    "title": "_BAT6578",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_GTF9499.jpg",
+    "title": "_GTF9499",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_GTF9501.jpg",
+    "title": "_GTF9501",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_GTF9509.jpg",
+    "title": "_GTF9509",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_GTF9511.jpg",
+    "title": "_GTF9511",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_GTF9515.jpg",
+    "title": "_GTF9515",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/_GTF9528.jpg",
+    "title": "_GTF9528",
+    "category": "FIH2 2026",
+    "subCategory": null
+  },
+  {
+    "image": "assets/gallery/FIH2-2026/placeholder.jpg",
+    "title": "placeholder",
+    "category": "FIH2 2026",
+    "subCategory": null
+  }
 ];
