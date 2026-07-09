@@ -1,10 +1,44 @@
-/* Efeito de hover suave para os cards da trajetória */
-.about-timeline-card {
-    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+/* ==========================================================================
+   Estilos Personalizados - Seção Sobre Nós (NEXA)
+   ========================================================================== */
+
+/* Efeito de Vidro Fosco (Glassmorphism) Base */
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
-.about-timeline-card:hover {
-    transform: translateY(-3px);
-    border-color: rgba(34, 211, 238, 0.3) !important;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+/* Animação e Interação dos Cards da Linha do Tempo e Mídia Kit */
+.grid .rounded-2xl, 
+.grid .rounded-3xl {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Efeito de Hover nos Cards Padrão (Suave elevação e brilho ciano sutil) */
+.grid .rounded-2xl:hover {
+  transform: translateY(-4px);
+  border-color: rgba(34, 211, 238, 0.25) !important;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(34, 211, 238, 0.05);
+}
+
+/* Efeito de Hover nos Cards de Grande Destaque (2025 e Chancela Internacional) */
+.grid .md\:col-span-2:hover,
+.grid .lg\:col-span-2:hover {
+  transform: translateY(-6px);
+  border-color: rgba(34, 211, 238, 0.4) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(34, 211, 238, 0.1);
+}
+
+/* Ajuste sutil para os ícones decorativos de fundo funcionarem como marca d'água */
+.pointer-events-none {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Melhora a legibilidade do gradiente de texto em navegadores antigos */
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
 }
