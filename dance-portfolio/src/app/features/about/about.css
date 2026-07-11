@@ -8,27 +8,18 @@
   -webkit-backdrop-filter: blur(12px);
 }
 
-/* Animação e Interação dos Cards da Linha do Tempo e Mídia Kit */
-.grid .rounded-2xl, 
+/* Animação e Interação dos Cards */
 .grid .rounded-3xl {
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
-              border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
-              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+              border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+              box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* Efeito de Hover nos Cards Padrão (Suave elevação e brilho ciano sutil) */
-.grid .rounded-2xl:hover {
+/* Efeito de Hover nos Cards (Suave elevação e brilho azul) */
+.grid .rounded-3xl:hover {
   transform: translateY(-4px);
-  border-color: rgba(34, 211, 238, 0.25) !important;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(34, 211, 238, 0.05);
-}
-
-/* Efeito de Hover nos Cards de Grande Destaque (2025 e Chancela Internacional) */
-.grid .md\:col-span-2:hover,
-.grid .lg\:col-span-2:hover {
-  transform: translateY(-6px);
-  border-color: rgba(34, 211, 238, 0.4) !important;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(34, 211, 238, 0.1);
+  border-color: rgba(37, 99, 235, 0.3) !important;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08), 0 0 15px rgba(37, 99, 235, 0.08);
 }
 
 /* Ajuste sutil para os ícones decorativos de fundo funcionarem como marca d'água */

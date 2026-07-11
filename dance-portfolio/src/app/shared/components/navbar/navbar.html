@@ -2,33 +2,33 @@
   <div class="max-w-6xl mx-auto px-6 py-4">
     <div class="flex items-center justify-between">
       <!-- Logo -->
-      <a href="#home" class="brand-logo flex items-center gap-3">
-        <img src="assets/logos/logo.png" alt="NEXA logo" class="logo-light h-9 w-auto" />
-        <span class="text-xl font-extrabold tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-white via-cyan-100 to-cyan-400">NEXA</span>
+      <a routerLink="/" class="brand-logo flex items-center gap-3">
+        <span class="logo-wrapper"><span class="logo-mask"></span></span>
+        <span class="text-xl font-extrabold tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-blue-900 via-blue-600 to-sky-400">NEXA</span>
       </a>
 
       <!-- Menu Desktop -->
       <ul class="hidden md:flex items-center space-x-8">
         <li>
-          <a href="#home" class="nav-link">Home</a>
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">Home</a>
         </li>
         <li>
-          <a href="#about" class="nav-link">Sobre</a>
+          <a routerLink="/sobre" routerLinkActive="active" class="nav-link">Sobre</a>
         </li>
         <li>
-          <a href="#conquistas" class="nav-link">Conquistas</a>
+          <a routerLink="/conquistas" routerLinkActive="active" class="nav-link">Conquistas</a>
         </li>
         <li>
-          <a href="#portfolio" class="nav-link">Portfólio</a>
+          <a routerLink="/portfolio" routerLinkActive="active" class="nav-link">Portfólio</a>
         </li>
         <li>
-          <a href="#gallery" class="nav-link">Galeria</a>
+          <a routerLink="/galeria" routerLinkActive="active" class="nav-link">Galeria</a>
         </li>
         <li>
-          <a href="#contact" class="nav-link">Contato</a>
+          <a routerLink="/contato" routerLinkActive="active" class="nav-link">Contato</a>
         </li>
         <li>
-          <a href="#parcerias" class="nav-btn">Seja Parceiro</a>
+          <a routerLink="/parcerias" routerLinkActive="active" class="nav-btn">Seja Parceiro</a>
         </li>
       </ul>
 
@@ -49,25 +49,25 @@
     <div class="mobile-menu md:hidden" [class.open]="isOpen()">
       <ul class="space-y-5 px-6 py-6 border-t border-slate-800/40 mt-4">
         <li>
-          <a href="#home" (click)="isOpen.set(false)" class="mobile-nav-link">Home</a>
+          <a routerLink="/" (click)="isOpen.set(false)" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="mobile-nav-link">Home</a>
         </li>
         <li>
-          <a href="#about" (click)="isOpen.set(false)" class="mobile-nav-link">Sobre</a>
+          <a routerLink="/sobre" (click)="isOpen.set(false)" routerLinkActive="active" class="mobile-nav-link">Sobre</a>
         </li>
         <li>
-          <a href="#conquistas" (click)="isOpen.set(false)" class="mobile-nav-link">Conquistas</a>
+          <a routerLink="/conquistas" (click)="isOpen.set(false)" routerLinkActive="active" class="mobile-nav-link">Conquistas</a>
         </li>
         <li>
-          <a href="#portfolio" (click)="isOpen.set(false)" class="mobile-nav-link">Portfólio</a>
+          <a routerLink="/portfolio" (click)="isOpen.set(false)" routerLinkActive="active" class="mobile-nav-link">Portfólio</a>
         </li>
         <li>
-          <a href="#gallery" (click)="isOpen.set(false)" class="mobile-nav-link">Galeria</a>
+          <a routerLink="/galeria" (click)="isOpen.set(false)" routerLinkActive="active" class="mobile-nav-link">Galeria</a>
         </li>
         <li>
-          <a href="#contact" (click)="isOpen.set(false)" class="mobile-nav-link">Contato</a>
+          <a routerLink="/contato" (click)="isOpen.set(false)" routerLinkActive="active" class="mobile-nav-link">Contato</a>
         </li>
         <li class="pt-2">
-          <a href="#parcerias" (click)="isOpen.set(false)" class="mobile-nav-btn text-center block">Seja Parceiro</a>
+          <a routerLink="/parcerias" (click)="isOpen.set(false)" routerLinkActive="active" class="mobile-nav-btn text-center block">Seja Parceiro</a>
         </li>
       </ul>
     </div>

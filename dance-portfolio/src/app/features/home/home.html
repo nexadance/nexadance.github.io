@@ -2,42 +2,74 @@
   <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
     <source src="assets/videos/intro.mp4" type="video/mp4" />
   </video>
-  <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-slate-950/60 to-slate-950/95"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-sky-100/40 via-blue-50/60 to-blue-100/90 backdrop-blur-[1px]"></div>
 
-  <div class="relative z-10 flex flex-col items-center justify-center w-full max-w-7xl px-4 sm:px-6 lg:px-8 text-center text-white home-hero-content">
+  <div class="relative z-10 flex flex-col items-center justify-center w-full max-w-7xl px-4 sm:px-6 lg:px-8 text-center text-slate-800 home-hero-content">
     
     <div class="max-w-5xl mx-auto flex flex-col items-center">
-      <!-- Logo Principal da Hero (Flutuante e Neon) -->
+      <!-- Logo Principal da Hero (Flutuante) -->
       <div class="hero-logo-container mb-6 animate-float">
-        <img src="assets/logos/logo.png" alt="NEXA logo" class="hero-brand-logo h-24 sm:h-28 w-auto" />
+        <div class="hero-brand-logo-mask"></div>
       </div>
 
-      <span class="uppercase tracking-[0.3em] text-xs sm:text-sm font-semibold mb-6 px-4 py-1.5 rounded-full bg-blue-500/10 text-cyan-400 border border-cyan-500/20 hero-chip backdrop-blur-sm">
+      <span class="uppercase tracking-[0.3em] text-xs sm:text-sm font-semibold mb-6 px-4 py-1.5 rounded-full bg-blue-100/80 text-blue-700 border border-blue-200/50 hero-chip backdrop-blur-sm">
         Desde 2017 • Referência em K-pop Cover no RS
       </span>
 
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-cyan-400">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-900 via-blue-600 to-sky-400">
         O grupo cover K-pop mais premiado do Rio Grande do Sul.
       </h1>
 
-      <p class="text-base sm:text-lg lg:text-xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+      <p class="text-base sm:text-lg lg:text-xl text-slate-700 mb-10 max-w-3xl mx-auto leading-relaxed">
         Muito além de um cover: entregamos a experiência idêntica de shows de nível internacional, conectando marcas de forma profunda a uma fã-base apaixonada e ativa no consumo.
       </p>
 
       <div class="flex flex-col sm:flex-row justify-center items-center gap-4 w-full sm:w-auto">
-        <a href="#about" class="hero-button-primary">
-          Conheça nossa história
+        <a routerLink="/sobre" class="hero-button-primary">
+          Conhecer o Grupo
         </a>
-        <a href="#conquistas" class="hero-button-secondary">
-          Nossas conquistas
+        <a routerLink="/galeria" class="hero-button-secondary">
+          Ver Fotos & Galeria
         </a>
-        <a href="#parcerias" class="hero-button-tertiary">
-          Parcerias & Patrocínios
+        <a routerLink="/contato" class="hero-button-tertiary">
+          Contato Comercial
         </a>
       </div>
     </div>
 
-    <div class="mt-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 w-full home-hero-cards">
+  </div>
+</section>
+
+<section id="fih2-2026" class="fih2-highlight w-full py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div>
+        <span class="uppercase text-sm font-semibold text-blue-600">Destaque</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">FIH2 2026 — 2º lugar na categoria KPOP</h2>
+        <p class="mt-4 text-slate-600 max-w-xl">Representamos com orgulho o Rio Grande do Sul no FIH2 2026, alcançando o 2º lugar na categoria KPOP. Agradecemos de coração a cada pessoa que contribuiu — quem participou das rifas, esteve nos workshops, enviou mensagens de apoio e compartilhou nosso trabalho: esse suporte coletivo foi fundamental para chegarmos até aqui. Essa colocação reflete dedicação, trabalho em equipe e o aprendizado que transformamos em evolução.</p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a routerLink="/galeria" class="hero-button-primary">Ver fotos do FIH2</a>
+          <a routerLink="/conquistas" class="hero-button-secondary">Ver conquistas</a>
+        </div>
+      </div>
+
+      <div class="fih2-media">
+        <div class="fih2-img-placeholder rounded-lg overflow-hidden">
+          <img src="assets/gallery/FIH2-2026/placeholder.jpg" alt="FIH2 NEXA 2026" class="w-full h-64 sm:h-72 object-cover" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 w-full">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <span class="uppercase text-sm font-semibold text-blue-600 tracking-wider">Diferenciais</span>
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-4">O que nos define</h2>
+    <div class="w-16 h-1 bg-blue-600 mx-auto mb-16 rounded-full"></div>
+    
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 w-full">
       <div class="home-card">
         <div class="home-card-icon-wrapper">🏆</div>
         <h3 class="home-card-title">Maior campeão do RS</h3>
@@ -68,30 +100,6 @@
         <p class="home-card-description">
           Anos ativando o sentimento de shows internacionais e gerando conexão emocional profunda com o público.
         </p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section id="fih2-2026" class="fih2-highlight w-full py-12">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-      <div>
-        <span class="uppercase text-sm font-semibold text-cyan-300">Destaque</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">FIH2 2026 — 2º lugar na categoria KPOP</h2>
-        <p class="mt-4 text-slate-200 max-w-xl">Representamos com orgulho o Rio Grande do Sul no FIH2 2026, alcançando o 2º lugar na categoria KPOP. Agradecemos de coração a cada pessoa que contribuiu — quem participou das rifas, esteve nos workshops, enviou mensagens de apoio e compartilhou nosso trabalho: esse suporte coletivo foi fundamental para chegarmos até aqui. Essa colocação reflete dedicação, trabalho em equipe e o aprendizado que transformamos em evolução.</p>
-
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#gallery" class="hero-button-primary">Ver fotos do FIH2</a>
-          <a href="#conquistas" class="hero-button-secondary">Ver conquistas</a>
-        </div>
-      </div>
-
-      <div class="fih2-media">
-        <div class="fih2-img-placeholder rounded-lg overflow-hidden">
-          <img src="assets/gallery/FIH2-2026/placeholder.jpg" alt="FIH2 NEXA 2026" class="w-full h-64 sm:h-72 object-cover" />
-        </div>
       </div>
     </div>
   </div>

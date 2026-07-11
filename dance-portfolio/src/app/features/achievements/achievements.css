@@ -5,8 +5,8 @@
 
 .rounded-2xl:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45), 0 0 15px rgba(34, 211, 238, 0.12);
-  border-color: rgba(34, 211, 238, 0.35) !important;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08), 0 0 15px rgba(37, 99, 235, 0.08);
+  border-color: rgba(37, 99, 235, 0.3) !important;
 }
 
 /* Ativação dos Gradientes de Texto */

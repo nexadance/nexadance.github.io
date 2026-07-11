@@ -1,8 +1,8 @@
 .navbar {
-  background: rgba(2, 4, 12, 0.75);
+  background: rgba(224, 235, 246, 0.75);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(37, 99, 235, 0.12);
   transition: background-color 0.3s ease;
 }
 
@@ -14,8 +14,25 @@
   transform: scale(1.03);
 }
 
-.logo-light {
-  filter: invert(100%) sepia(35%) saturate(200%) hue-rotate(185deg) brightness(1.15);
+.logo-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+}
+
+.brand-logo:hover .logo-wrapper {
+  transform: scale(1.06) rotate(2deg);
+  filter: drop-shadow(0 4px 10px rgba(37, 99, 235, 0.3));
+}
+
+.logo-mask {
+  display: inline-block;
+  width: 2.25rem;
+  height: 2.25rem;
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #0ea5e9 100%);
+  -webkit-mask: url('/assets/logos/logo.png') no-repeat center / contain;
+  mask: url('/assets/logos/logo.png') no-repeat center / contain;
 }
 
 /* Nav Link Hover Underline Animation */
@@ -25,7 +42,7 @@
   font-weight: 500;
   letter-spacing: 0.03em;
   padding: 0.5rem 0.25rem;
-  color: rgba(241, 245, 249, 0.85) !important;
+  color: #475569 !important;
   transition: color 0.3s ease;
 }
 
@@ -36,17 +53,17 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, #22d3ee, #3b82f6);
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.nav-link:hover {
-  color: #ffffff !important;
+.nav-link:hover, .nav-link.active {
+  color: #2563eb !important;
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after, .nav-link.active::after {
   transform: scaleX(1);
   transform-origin: left;
 }
@@ -100,9 +117,10 @@
 }
 
 .mobile-menu-btn span {
+  display: block;
   width: 100%;
   height: 2px;
-  background-color: #f1f5f9;
+  background-color: #334155;
   border-radius: 9999px;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -126,10 +144,10 @@
   top: 100%;
   left: 0;
   width: 100%;
-  background: rgba(2, 4, 12, 0.98);
+  background: rgba(224, 235, 246, 0.98);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(37, 99, 235, 0.12);
   max-height: 0;
   overflow: hidden;
   opacity: 0;
@@ -154,12 +172,12 @@
   font-size: 1.05rem;
   font-weight: 500;
   padding: 0.5rem 0;
-  color: rgba(241, 245, 249, 0.8) !important;
+  color: #475569 !important;
   transition: color 0.3s ease, padding-left 0.3s ease;
 }
 
-.mobile-nav-link:hover {
-  color: #22d3ee !important;
+.mobile-nav-link:hover, .mobile-nav-link.active {
+  color: #2563eb !important;
   padding-left: 8px;
 }
 

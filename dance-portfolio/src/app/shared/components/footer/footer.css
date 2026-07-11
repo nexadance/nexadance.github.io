@@ -1,24 +1,24 @@
 /* src/app/shared/components/footer/footer.css */
 
 footer {
-  background: rgba(4, 8, 16, 0.95);
-  border-top: 1px solid rgba(148, 163, 184, 0.08);
+  background: rgba(229, 234, 243, 0.95);
+  border-top: 1px solid rgba(37, 99, 235, 0.12);
   backdrop-filter: blur(12px);
 }
 
 .footer-link {
-  color: #94a3b8;
+  color: #475569;
   text-decoration: none;
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
 }
 
 .footer-link:hover {
-  color: var(--color-primary-light);
-  transform: translateX(2px);
+  color: #2563eb;
+  transform: translateX(4px);
 }
 
 .footer-social-icon {
-  color: #94a3b8;
+  color: #475569;
   font-size: 1.35rem;
   transition: all 0.25s ease;
   display: inline-flex;
